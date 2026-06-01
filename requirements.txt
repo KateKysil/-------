@@ -1,0 +1,7 @@
+streamlit
+pypdf
+openai
+elevenlabs
+pydub
+streamlit-authenticator
+PyYAML

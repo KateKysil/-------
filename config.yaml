@@ -1,0 +1,20 @@
+cookie:
+  expiry_days: 30
+  key: some_random_secret_key
+  name: audiobook_auth
+credentials:
+  usernames:
+    admin:
+      email: kysil_kateryna@knu.ua
+      failed_login_attempts: 0
+      logged_in: true
+      name: admin
+      password: $2b$12$BMzHSUAsfdkJI.0YvINvC.TBx7cuctxXb7r4K40VElH2NWgQ7RqH2
+    kate:
+      email: kysilkate@gmail.com
+      failed_login_attempts: 0
+      first_name: Kate
+      last_name: Kysil
+      logged_in: true
+      password: $2b$12$etA.VpR7putwoBWn8Jc2heWPSsTDzKbtWz7XHUSyQzwV09ZLrGjSe
+      roles: null
