@@ -200,14 +200,12 @@ if st.session_state["authentication_status"]:
                 full_structured_data = []
                 st.write(f"Структуруємо діалоги")
                 for i, chunk in enumerate(chunks):
-                    st.write(f"Структуруємо діалоги")
                     structured = structure_text_with_llm(ai_client, chunk, character_names)
                     
                     if isinstance(structured, list): 
                         full_structured_data.extend(structured)
                     elif isinstance(structured, dict): 
                         full_structured_data.extend(structured.get("data", structured.get("segments", [])))
-                st.json(full_structured_data)
                 st.write("Озвучуємо...")
                 temp_dir = tempfile.mkdtemp()
                 audio_segments = []
