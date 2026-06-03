@@ -186,7 +186,7 @@ if st.session_state["authentication_status"]:
                 st.write("Шукаємо всіх персонажів у тексті...")
                 characters_dict = extract_characters(ai_client, raw_text)
                 character_names = list(characters_dict.keys())
-                st.write(f"Знайдено персонажів: {', '.join(character_names)}")
+                st.write(f"Знайдено персонажів")
                 
                 # Етап 3: Кастинг
                 st.write("Підбираємо голоси...")
@@ -194,12 +194,13 @@ if st.session_state["authentication_status"]:
                 
                 # Етап 4: Розбиття на шматки
                 chunks = split_text(raw_text)
-                st.write(f"Текст розбито на {len(chunks)} частин.")
+                #st.write(f"Текст розбито на {len(chunks)} частин.")
                 
                 # Етап 5: Структурування
                 full_structured_data = []
+                st.write(f"Структуруємо діалоги")
                 for i, chunk in enumerate(chunks):
-                    st.write(f"Структуруємо діалоги (Частина {i+1} з {len(chunks)})...")
+                    st.write(f"Структуруємо діалоги")
                     structured = structure_text_with_llm(ai_client, chunk, character_names)
                     
                     if isinstance(structured, list): 
@@ -235,7 +236,7 @@ if st.session_state["authentication_status"]:
                     progress_bar.progress((idx + 1) / len(full_structured_data))
 
                 # Етап 7: Склеювання
-                st.write("Склеюємо фінальний файл...")
+                st.write("Створюємо фінальний файл...")
                 final_audio = AudioSegment.empty()
                 pause = AudioSegment.silent(duration=400)
                 
