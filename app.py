@@ -45,10 +45,12 @@ if st.session_state["authentication_status"]:
 
     AVAILABLE_VOICES = [
         {"voice_id": "lBvcwD2nQgxr2mkKA71z", "description": "Глибокий чоловічий голос."},
-        {"voice_id": "V6PW5xGyI4Q6XPxkt8G9", "description": "Інтелектуальний чоловічий."},
+        {"voice_id": "V6PW5xGyI4Q6XPxkt8G9", "description": "Високий чоловічий."},
         {"voice_id": "BFmokXObxZMCBXC0A9ny", "description": "Приємний чоловічий."},
         {"voice_id": "yMBZR4SLoc24wOJLWAB2", "description": "Низький жіночий голос."},
-        {"voice_id": "BEprpS2vpgM32yNJpTXq", "description": "Емоційний жіночий голос."}
+        {"voice_id": "BEprpS2vpgM32yNJpTXq", "description": "Емоційний жіночий голос."},
+        {"voice_id": "eLDtXX7z65CuLasDRxrP", "description": "Розумний, тихий, освічений чоловік"},
+        {"voice_id": "Bn2Tw7ruLKdtFQ6xcEkG", "description": "Теплий, світлий жіночий голос"}
     ]
 
 
